@@ -18,8 +18,8 @@ header {
 
 header h1 {
     text-align: center;
+    font-size: 2.4rem;
     margin-bottom: 20px;
-    font-size: 2rem;
 }
 
 nav {
@@ -32,11 +32,11 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 nav a:hover {
-    color: #ffd700;
+    color: gold;
 }
 
 main {
@@ -44,31 +44,34 @@ main {
     margin: 40px auto;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     gap: 30px;
 }
 
 .card {
     background: white;
+    border-radius: 12px;
     padding: 25px;
-    border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
 }
 
 .card h2 {
     color: #003366;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .card h3 {
     color: #003366;
     margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 .profile-image {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
+    object-position: center top;
     display: block;
     margin: 20px auto;
     border-radius: 50%;
@@ -84,6 +87,7 @@ main {
 }
 
 .card p {
+    font-size: 1.05rem;
     line-height: 1.8;
     margin-top: 20px;
 }
@@ -93,33 +97,53 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 #lastModified {
-    color: #ffd700;
+    color: gold;
     margin-top: 10px;
 }
 
 @media (max-width:768px) {
 
+    header h1 {
+        font-size: 1.8rem;
+    }
+
     nav {
         flex-direction: column;
         align-items: center;
-        gap: 12px;
+        gap: 15px;
     }
 
     main {
         grid-template-columns: 1fr;
+        padding: 15px;
     }
 
-    header h1 {
-        font-size: 1.6rem;
+    .card {
+        padding: 20px;
     }
 
     .profile-image {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
 
+    .country-image {
+        max-width: 250px;
+    }
+
+    .card h2 {
+        font-size: 1.8rem;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
 }
