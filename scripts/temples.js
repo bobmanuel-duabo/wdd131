@@ -1,21 +1,22 @@
-const hamButton = document.querySelector("#menu");
+const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 
-hamButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-    hamButton.classList.toggle("open");
+menuButton.addEventListener("click", () => {
 
-    if (navigation.classList.contains("open")) {
-        hamButton.innerHTML = "✖";
+    navigation.classList.toggle("hide");
+
+    if (navigation.classList.contains("hide")) {
+        menuButton.innerHTML = "&#9776;";
     } else {
-        hamButton.innerHTML = "☰";
+        menuButton.innerHTML = "&times;";
     }
+
 });
 
-// Footer dates
-const year = document.querySelector("#currentyear");
-const lastModified = document.querySelector("#lastModified");
+// Footer
 
-year.textContent = new Date().getFullYear();
+document.querySelector("#currentyear").textContent =
+    new Date().getFullYear();
 
-lastModified.textContent = `Last Modification: ${document.lastModified}`;
+document.querySelector("#lastModified").textContent =
+    `Last Modification: ${document.lastModified}`;
