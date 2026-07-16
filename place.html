@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 131 | Nigeria Country Page</title>
+
+    <meta name="description"
+        content="A country page about Nigeria featuring information, weather, and beautiful scenery.">
+    <meta name="author" content="Duabo Bobmanuel">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+
+        <picture>
+            <source srcset="images/nigeria-large.webp" media="(min-width: 768px)">
+            <img src="images/nigeria-small.webp" alt="Beautiful landscape of Nigeria" width="1200" height="700">
+        </picture>
+
+        <section class="card data">
+
+            <h2>Data</h2>
+
+            <p><strong>Country:</strong> Nigeria</p>
+            <p><strong>Capital:</strong> Abuja</p>
+            <p><strong>Population:</strong> 230 Million</p>
+            <p><strong>Area:</strong> 923,768 km²</p>
+            <p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</p>
+            <p><strong>Currency:</strong> Naira (₦)</p>
+            <p><strong>Time Zone:</strong> UTC +1</p>
+            <p><strong>Calling Code:</strong> +234</p>
+
+        </section>
+
+        <section class="card weather">
+
+            <h2>Weather</h2>
+
+            <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
+
+            <p><strong>Temperature:</strong> <span id="temperature">28</span>°C</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Wind:</strong> <span id="windSpeed">12</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © <span id="year"></span> | Duabo Bobmanuel | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
