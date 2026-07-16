@@ -11,12 +11,7 @@ const windSpeed = 12;   // km/h
 
 // Wind Chill Formula (Metric)
 function calculateWindChill(temp, speed) {
-    return (
-        13.12 +
-        0.6215 * temp -
-        11.37 * Math.pow(speed, 0.16) +
-        0.3965 * temp * Math.pow(speed, 0.16)
-    ).toFixed(1);
+    return (13.12 + 0.6215 * temp - 11.37 * Math.pow(speed, 0.16) + 0.3965 * temp * Math.pow(speed, 0.16)).toFixed(1);
 }
 
 // Display Wind Chill
