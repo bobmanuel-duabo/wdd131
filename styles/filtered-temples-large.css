@@ -1,72 +1,31 @@
-/* ==========================================
-   WDD 131 - Filtered Temples Large Screen
-   Author: Duabo Bobmanuel
-========================================== */
+@media only screen and (min-width: 768px) {
 
-@media screen and (min-width: 768px) {
-
-    #temple-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        align-items: start;
+    #menu {
+        display: none;
     }
 
-    #temple-container section {
+    nav {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        min-height: 520px;
-    }
-
-    #temple-container h2 {
-        margin-top: 1.2rem;
-        margin-bottom: 1rem;
-        font-size: 2rem;
-    }
-
-    #temple-container p {
-        margin: .4rem 1rem;
-        font-size: 1.05rem;
-    }
-
-    #temple-container img {
-        width: 100%;
-        height: 260px;
-        object-fit: cover;
-        margin-top: auto;
+        justify-content: center;
     }
 
     .navigation {
+        display: flex !important;
+        flex-direction: row;
         justify-content: center;
-        gap: 3rem;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .navigation.hide {
+        display: flex !important;
     }
 
     .navigation a {
-        font-size: 1.15rem;
-    }
-
-    main {
-        max-width: 1400px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-    main {
-        max-width: 1500px;
+        padding: 1rem 2rem;
     }
 
     #temple-container {
-        gap: 2.5rem;
-    }
-
-    #temple-container section {
-        min-height: 560px;
-    }
-
-    #temple-container img {
-        height: 280px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
